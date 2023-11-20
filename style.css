@@ -50,7 +50,7 @@ li a {
     font-weight: 500;
 }
 
-.up input {
+.up button {
     border-radius: 30px;
     padding-inline: 15px;
     padding-block: 12px;
@@ -126,7 +126,7 @@ li a {
 }
 
 .side-text {
-    flex-basis: 30%;
+    flex-basis: 22%;
 }
 
 .side-text h2 {
@@ -138,7 +138,7 @@ li a {
 
 .side-text p {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 160%;
 }
 
@@ -147,8 +147,63 @@ main section:nth-of-type(even) {
     background-color: #f6f6f6;
 }
 
+main section:nth-of-type(even) .side-text {
+    background-color: #f6f6f6;
+    order: -1;
+}
+
 
 footer {
     background-color: #23272a;
     height: 500px;
+}
+
+.section.last {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section.last .side-text {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section.last .side-text p {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: -18vh;
+}
+
+.section.last .cth {
+    display: flex;
+    flex-direction: column;
+}
+
+.section.last h3 {
+    font-size: 2.7vh;
+    padding-block: 5vh;
+    padding-inline: 5vh;
+    background-image: url(img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.section.last button {
+    text-align: center;
+    /* width: 5vw; */
+    align-self: center;
+    margin-top: -3vh;
+    border-radius: 30px;
+    padding: 10px 30px;
+    background-color: #8ea1e1;
+    color: white;
+}
+
+.section.last button span {
+    vertical-align: middle;
+}
+
+.section.last button span a {
+    color: white;
 }
