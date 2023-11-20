@@ -158,21 +158,23 @@
             <div class="footer-menu">
                 <h3>Il tuo posto per parlare</h3>
                 <div id="language-selection">
-                    <img src="img/ita.png" alt="">
-                    <input list="Languages" name="Languages" placeholder="Italiano">
+                    <img src="img/ita.png" alt="flag" id="flag">
+                    <div id="google_translate_element"></div>
+                    <!-- <input list="Languages" name="Languages" placeholder="Italiano" id="choice">
                     <datalist id="Languages">
                         <option value="Italiano">
                         <option value="Español">
                         <option value="Deutsch">
                         <option value="Français">
                         <option value="Polski">
-                    </datalist>
+                    </datalist> -->
                 </div>
                 <div class="socials">
-                    <img src="img/x.png" alt="x-logo">
-                    <img src="img/ig.png" alt="ig-logo">
-                    <img src="img/fb.png" alt="fb-logo">
-                    <img src="img/yt.png" alt="yt-logo">
+                    <a href="https://twitter.com/discord"><img src="img/x.png" alt="x-logo"></a>
+                    <a href="https://www.instagram.com/discord/"><img src="img/ig.png" alt="ig-logo"></a>
+                    <a href="https://www.facebook.com/discord/?locale=it_IT"><img src="img/fb.png" alt="fb-logo"></a>
+                    <a href="https://www.youtube.com/channel/UCZ5XnGb-3t7jCkXdawN2tkA"><img src="img/yt.png"
+                            alt="yt-logo"></a>
                 </div>
 
             </div>
@@ -238,11 +240,22 @@
             <a href="#"><img src="img/logo.svg" alt="" class="logo"></a>
             <button><a href="https://discord.com/app">Registrati</a></button>
 
+
         </div>
 
 
     </footer>
 
+    <script src="script.js"></script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'it', includedLanguages: 'es,it,fr,eng,en' }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>

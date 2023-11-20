@@ -271,7 +271,18 @@ footer {
     vertical-align: middle;
 }
 
-#language-selection input[list] {
+#language-selection div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#google_translate_element select {
+    background-color: #23272a;
+    color: white;
+    font-size: 1.5vh;
+}
+
+/* #language-selection input[list] {
     background: rgba(0, 0, 0, 0);
     color: white;
     border: 0px solid white;
@@ -286,7 +297,7 @@ footer {
     /* Firefox */
 }
 
-.socials {
+*/ .socials {
     display: flex;
     gap: 1vw;
 }
