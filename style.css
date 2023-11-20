@@ -21,6 +21,7 @@ header {
     background-size: contain;
     background-size: 100%;
     background-repeat: no-repeat;
+    /* width: 100vw; */
 }
 
 .up {
@@ -29,12 +30,12 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding-top: 15px;
+    padding-top: 1.5vh;
 
 }
 
 .logo {
-    height: 35px;
+    height: 3.6vh;
 }
 
 .up ul {
@@ -45,17 +46,36 @@ header {
 li a {
     color: white;
     text-decoration: none;
-    padding: 20px;
-    font-size: 17px;
+    padding: 1.2vw;
+    font-size: 1.7vh;
     font-weight: 500;
 }
 
+li a:hover {
+    text-decoration: underline;
+}
+
 .up button {
-    border-radius: 30px;
-    padding-inline: 15px;
-    padding-block: 12px;
+    border-radius: 30vw;
+    padding-inline: 1.5vw;
+    padding-block: 1.2vh;
     border: 0px solid white;
-    font-size: 13px;
+    font-size: 1.4vh;
+    font-weight: 600;
+}
+
+.up button a:hover {
+    color: blue;
+}
+
+.up button:hover>a,
+.footer-register button:hover>a {
+    color: blue;
+}
+
+.up button:hover,
+.footer-register button:hover {
+    box-shadow: 2px 2px blue;
 }
 
 .middle {
@@ -66,7 +86,7 @@ li a {
 
 .middle h1 {
     color: white;
-    font-size: 55px;
+    font-size: 5.7vh;
     width: 70%;
     font-weight: 700;
     line-height: 0.9;
@@ -79,22 +99,34 @@ li a {
     width: 80%;
     margin: auto;
     line-height: 180%;
-    font-size: 19px;
+    font-size: 2vh;
     font-weight: 600;
 }
 
 .middle button {
-    border-radius: 30px;
+    border-radius: 30vw;
     border: 0px;
-    font-size: 20px;
-    padding-inline: 35px;
+    font-size: 2vh;
+    padding-inline: 3.5vw;
     padding-block: auto;
-    height: 60px;
-    margin: 30px 10px 150px
+    height: 6vh;
+    margin: 3vh 1vw 15vh 1vw;
+}
+
+.middle button:hover a,
+.section.last button:hover a,
+.section.last button:hover span {
+    color: blue;
+}
+
+.middle button:hover,
+.section.last button:hover {
+    box-shadow: 5px 5px blue;
 }
 
 .middle button span {
     vertical-align: middle;
+    font-size: 2.2vh;
 }
 
 .dark {
@@ -102,7 +134,8 @@ li a {
 
 }
 
-.dark a {
+.dark a,
+.footer-register button a {
     color: white;
 }
 
@@ -115,14 +148,14 @@ li a {
     display: flex;
     width: 64%;
     margin: 0 auto;
-    gap: 150px;
+    gap: 9vw;
     align-items: center;
     justify-content: center;
     padding-block: 12vh;
 }
 
 .section img {
-    flex-basis: 50%;
+    flex-basis: 60%;
 }
 
 .side-text {
@@ -130,14 +163,14 @@ li a {
 }
 
 .side-text h2 {
-    font-size: 40px;
+    font-size: 4vh;
     padding-bottom: 30px;
     font-weight: 800;
     color: #23272a;
 }
 
 .side-text p {
-    font-size: 18px;
+    font-size: 1.8vh;
     font-weight: 500;
     line-height: 160%;
 }
@@ -155,7 +188,6 @@ main section:nth-of-type(even) .side-text {
 
 footer {
     background-color: #23272a;
-    height: 500px;
 }
 
 .section.last {
@@ -176,6 +208,7 @@ footer {
 }
 
 .section.last .cth {
+    margin-top: -11vh;
     display: flex;
     flex-direction: column;
 }
@@ -194,16 +227,132 @@ footer {
     /* width: 5vw; */
     align-self: center;
     margin-top: -3vh;
-    border-radius: 30px;
-    padding: 10px 30px;
+    border-radius: 30vw;
+    padding: 1.5vh 3.0vw;
     background-color: #8ea1e1;
+    border: 0px solid white;
     color: white;
+    font-size: 1.8vh;
 }
 
 .section.last button span {
     vertical-align: middle;
+    font-size: 2vh;
 }
 
 .section.last button span a {
     color: white;
+    font-weight: 550;
+}
+
+.footer-container,
+.footer-register {
+    width: 64%;
+    margin: 0 auto;
+    padding-top: 10vh;
+    display: flex;
+}
+
+.footer-container h3,
+.footer-container h4 {
+    color: #7289da;
+}
+
+.footer-container h3 {
+    font-size: 3vh;
+}
+
+#language-selection {
+    padding-block: 1.5vh;
+}
+
+#language-selection img {
+    height: 2vh;
+    vertical-align: middle;
+}
+
+#language-selection input[list] {
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    border: 0px solid white;
+    width: 5vw;
+    font-size: 2vh;
+    vertical-align: middle;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+.socials {
+    display: flex;
+    gap: 1vw;
+}
+
+.socials img {
+    width: 1.5vw;
+
+}
+
+.footer-container {
+    border-bottom: 2px solid #4a5882;
+    padding-bottom: 2vh;
+    display: flex;
+
+}
+
+.list-container ul {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.5vh;
+    padding-block: 0.5vh;
+}
+
+.list-container ul li {
+    text-decoration: none;
+    list-style-type: none;
+    padding-block: 0.6vh;
+}
+
+.list-container ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.list-container h5 {
+    color: #7289da;
+    font-size: 1.7vh;
+}
+
+nav {
+    display: flex;
+}
+
+.footer-menu {
+    flex-basis: 25%;
+}
+
+nav {
+    flex-basis: 65%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-register {
+    justify-content: space-between;
+    padding-top: 2vh;
+    padding-bottom: 10vh;
+}
+
+.footer-register button {
+    border-radius: 30vw;
+    padding-inline: 1.5vw;
+    padding-block: 1.2vh;
+    border: 0px solid white;
+    font-size: 1.4vh;
+    font-weight: 600;
+    background-color: #8ea1e1;
 }
