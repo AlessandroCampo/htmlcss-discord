@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/antique-olive-std?styles=15900');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+html {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+    background-image: url("img/background.png");
+    background-size: contain;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.up {
+    display: flex;
+    width: 64%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 15px;
+
+}
+
+.logo {
+    height: 35px;
+}
+
+.up ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.up input {
+    border-radius: 30px;
+    padding-inline: 15px;
+    padding-block: 12px;
+    border: 0px solid white;
+    font-size: 13px;
+}
+
+.middle {
+    width: 52%;
+    margin: 15vh auto 0 auto;
+    text-align: center;
+}
+
+.middle h1 {
+    color: white;
+    font-size: 55px;
+    width: 70%;
+    font-weight: 700;
+    line-height: 0.9;
+    margin: 0 auto 5vh;
+    /* font-family: 'Antique Olive Std', sans-serif; */
+}
+
+.middle p {
+    color: white;
+    width: 80%;
+    margin: auto;
+    line-height: 180%;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.middle button {
+    border-radius: 30px;
+    border: 0px;
+    font-size: 20px;
+    padding-inline: 35px;
+    padding-block: auto;
+    height: 60px;
+    margin: 30px 10px 150px
+}
+
+.middle button span {
+    vertical-align: middle;
+}
+
+.dark {
+    background-color: #23272a;
+
+}
+
+.dark a {
+    color: white;
+}
+
+.light a {
+    color: #23272a;
+
+}
+
+.section {
+    display: flex;
+    width: 64%;
+    margin: 0 auto;
+    gap: 150px;
+    align-items: center;
+    justify-content: center;
+    padding-block: 12vh;
+}
+
+.section img {
+    flex-basis: 50%;
+}
+
+.side-text {
+    flex-basis: 30%;
+}
+
+.side-text h2 {
+    font-size: 40px;
+    padding-bottom: 30px;
+    font-weight: 800;
+    color: #23272a;
+}
+
+.side-text p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 160%;
+}
+
+
+main section:nth-of-type(even) {
+    background-color: #f6f6f6;
+}
+
+
+footer {
+    background-color: #23272a;
+    height: 500px;
+}
