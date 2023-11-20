@@ -47,8 +47,8 @@
                 assieme, Discord rende più facile chiacchierare ogni giorno e ritrovarsi più spesso.
             </p>
             <button class="light">
-                <span class="material-symbols-outlined">
-                    download
+                <span>
+                    img
                 </span>
                 <span><a href="/img/logo.svg" download>Scarica per Windows</a></span>
             </button>
@@ -158,7 +158,7 @@
             <div class="footer-menu">
                 <h3>Il tuo posto per parlare</h3>
                 <div id="language-selection">
-                    <img src="img/Italiano.png" alt="flag" id="flag">
+                    <img src="img/it.png" alt="flag" id="flag">
                     <div id="google_translate_element"></div>
                     <!-- <input list="Languages" name="Languages" placeholder="Italiano" id="choice">
                     <datalist id="Languages">
@@ -170,18 +170,20 @@
                     </datalist> -->
                 </div>
                 <div class="socials">
-                    <a href="https://twitter.com/discord"><img src="img/x.png" alt="x-logo"></a>
-                    <a href="https://www.instagram.com/discord/"><img src="img/ig.png" alt="ig-logo"></a>
-                    <a href="https://www.facebook.com/discord/?locale=it_IT"><img src="img/fb.png" alt="fb-logo"></a>
-                    <a href="https://www.youtube.com/channel/UCZ5XnGb-3t7jCkXdawN2tkA"><img src="img/yt.png"
-                            alt="yt-logo"></a>
+                    <a href="https://twitter.com/discord" target="_blank"><img src="img/x.png" alt="x-logo"></a>
+                    <a href="https://www.instagram.com/discord/" target="_blank"><img src="img/ig.png"
+                            alt="ig-logo"></a>
+                    <a href="https://www.facebook.com/discord/?locale=it_IT" target="_blank"><img src="img/fb.png"
+                            alt="fb-logo"></a>
+                    <a href="https://www.youtube.com/channel/UCZ5XnGb-3t7jCkXdawN2tkA" target="_blank"><img
+                            src="img/yt.png" alt="yt-logo"></a>
                 </div>
 
             </div>
 
             <nav>
                 <div class="list-container">
-                    <h5>Prodotto</h5>
+                    <h5 id="lang-ref">Prodotto</h5>
                     <ul>
                         <li>Scarica</li>
                         <li>Perchè Discord</li>
@@ -252,6 +254,7 @@
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({ pageLanguage: 'it', includedLanguages: 'es,it,fr,eng,en' }, 'google_translate_element');
         }
+
     </script>
 
     <script type="text/javascript"
