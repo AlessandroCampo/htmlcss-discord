@@ -5,7 +5,7 @@ list.addEventListener("input", checkFlag)
 function checkFlag() {
     console.log("ciao")
     let flag = document.getElementById("flag")
-    flag.src = "img/" + list.name + ".png"
+    flag.src = "img/" + list.value + ".png"
 }
 
 
