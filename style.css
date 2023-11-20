@@ -291,13 +291,10 @@ footer {
     vertical-align: middle;
 }
 
-::placeholder {
-    color: white;
-    opacity: 1;
-    /* Firefox */
-}
 
-*/ .socials {
+
+*/
+.socials {
     display: flex;
     gap: 1vw;
 }
